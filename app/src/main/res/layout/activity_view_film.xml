@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewFilmActivity"
+    android:background="#FF5722">
+
+
+    <ImageButton
+        android:id="@+id/starButton1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:onClick="star1"
+        app:layout_constraintEnd_toStartOf="@+id/starButton2"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameView"
+        app:srcCompat="@drawable/starempty" />
+
+    <ImageButton
+        android:id="@+id/starButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="star2"
+        app:layout_constraintBottom_toBottomOf="@+id/starButton1"
+        app:layout_constraintEnd_toStartOf="@+id/starButton3"
+        app:layout_constraintTop_toTopOf="@+id/starButton1"
+        app:srcCompat="@drawable/starempty" />
+
+    <ImageButton
+        android:id="@+id/starButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="star3"
+        app:layout_constraintBottom_toBottomOf="@+id/starButton4"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/starButton4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/starempty" />
+
+    <ImageButton
+        android:id="@+id/starButton4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="star4"
+        app:layout_constraintBottom_toBottomOf="@+id/starButton5"
+        app:layout_constraintStart_toEndOf="@+id/starButton3"
+        app:layout_constraintTop_toTopOf="@+id/starButton5"
+        app:srcCompat="@drawable/starempty" />
+
+    <ImageButton
+        android:id="@+id/starButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:onClick="star5"
+        app:layout_constraintStart_toEndOf="@+id/starButton4"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameView"
+        app:srcCompat="@drawable/starempty" />
+
+
+    <Button
+        android:id="@+id/rateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="rateButton"
+        android:text="Rate!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/material_on_background_emphasis_high_type"
+        app:layout_constraintEnd_toEndOf="@+id/img2_id"
+        app:layout_constraintStart_toStartOf="@+id/img2_id"
+        app:layout_constraintTop_toBottomOf="@+id/starButton2" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_spinner"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/img2_text_id"
+        app:layout_constraintStart_toStartOf="@+id/img2_text_id"
+        app:layout_constraintTop_toBottomOf="@+id/img2_text_id" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Star rating: "
+        app:layout_constraintBottom_toBottomOf="@+id/ratingTextView"
+        app:layout_constraintEnd_toStartOf="@+id/ratingTextView"
+        app:layout_constraintTop_toTopOf="@+id/ratingTextView" />
+
+    <ImageView
+        android:id="@+id/img2_id"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/img2_text_id"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_spinner"
+        android:gravity="center"
+        android:text="movies"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img2_id"
+        app:layout_constraintStart_toStartOf="@+id/img2_id"
+        app:layout_constraintTop_toBottomOf="@+id/img2_id" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="lunchBookingConfirmationActivity"
+        android:text="Book"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameView"
+        app:layout_constraintStart_toStartOf="@+id/lastNameView"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameView" />
+
+    <TextView
+        android:id="@+id/lastNameView"
+        android:layout_width="255dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_spinner"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ratingTextView"
+        app:layout_constraintStart_toStartOf="@+id/ratingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTextView"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="335dp"
+        android:layout_height="64dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/footer_bar_rounded"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateButton">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="69dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="lunchAccountActivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_perm_identity_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:onClick="lunchMainnActivity"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_action_name"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:onClick="lunchLoginActivity"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_baseline_login_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

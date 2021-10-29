@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cinemaapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CinemaApp">
+        <activity android:name=".CancelConfirm"></activity>
+        <activity
+            android:name=".SeatSelectActivity"
+            android:label="Select Seat"
+            android:parentActivityName=".BookingConfirmationActivity"
+            ></activity>
+        <activity 
+            android:name=".RegistrationConfirmed"    
+            android:label="Register confirmed" 
+            />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Registration page"
+            android:parentActivityName=".LoginActivity"
+            />
+        <activity 
+            android:name=".ConfirmedShowActivity"  
+            android:label="Confirmation"
+            />
+        <activity
+            android:name=".CinemaDetailsActivity"
+            android:label="Cinema details"
+            android:parentActivityName=".SearchResultsActivity" 
+            />
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:label="Please confirm your booking"
+            android:parentActivityName=".ViewFilmActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".ViewFilmActivity"
+            android:label="Film details"
+            android:parentActivityName=".SearchResultsActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="Search results"
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".AccountActivity"
+            android:label="Account page"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+
+            android:name=".MainActivity"
+
+            />
+        <activity
+            android:name=".LoginActivity"   android:label="Login page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

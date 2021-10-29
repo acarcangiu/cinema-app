@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".BookingConfirmationActivity">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+
+            android:id="@+id/book_ticket_title_id"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FF5722"
+            android:divider="?android:dividerHorizontal"
+            android:gravity="center"
+            android:text="Confirm Booking"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_ticket_title_id" />
+
+
+        <TextView
+            android:id="@+id/firstNameView"
+            android:layout_width="197dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_spinner"
+            android:gravity="center"
+            android:text="Film Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_ticket_title_id" />
+
+        <TextView
+            android:id="@+id/c_t_id"
+            android:layout_width="197dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_spinner"
+            android:gravity="center"
+            android:text="Cinema Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameView" />
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="196dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_spinner"
+            android:gravity="center"
+            android:text="Date Time"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_t_id" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="236dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Choose number of Tickets:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+        <Spinner
+            android:id="@+id/spinner_ticket_id"
+            android:layout_width="41dp"
+            android:layout_height="26dp"
+            android:background="@drawable/rounded_spinner"
+            android:entries="@array/tickets"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/cancel_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginBottom="8dp"
+            android:text="Cancel"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/search_button_id4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="lunchConfirmShowActivity"
+            android:text="Book"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+
+            android:layout_width="200dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3">
+
+            <TextView
+
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Total Price:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="£0.0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Tickets"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="£14.49"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="32dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.561"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:onClick="lunchSeatSelectActivity"
+            android:text="Select seats"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/seat1Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/seat2Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/seat1Select"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/seat3Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/seat2Select"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/seat4Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/seat3Select"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/seat5Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/seat4Select"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="335dp"
+        android:layout_height="64dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/footer_bar_rounded"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:onClick="lunchMainActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_name"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:onClick="lunchLoginnActivity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_login_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="69dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="lunchAccounttActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_perm_identity_24"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

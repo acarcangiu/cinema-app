@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".SeatSelectActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="354dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="318dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/book_ticket_title_id"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FF5722"
+            android:divider="?android:dividerHorizontal"
+            android:gravity="center"
+            android:text="Select Seat"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_ticket_title_id" />
+
+
+        <Button
+            android:id="@+id/cancel_seatBook_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="Cancel"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/search_button_id4"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/search_button_id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="28dp"
+            android:text="Confirm"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/seatNumberText"
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_spinner"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/seatB3Button"
+            tools:text="2B" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="52dp"
+            android:text="Selected Seat:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seatB1Button" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="226dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_ticket_title_id"
+            app:srcCompat="@drawable/cinemascreen" />
+
+        <ImageButton
+            android:id="@+id/seatA1Button"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="16dp"
+            android:onClick="seatA1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/seatavailable" />
+
+        <ImageButton
+            android:id="@+id/seatA2Button"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:onClick="seatA2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/seatnotavailable" />
+
+        <ImageButton
+            android:id="@+id/seatB3Button"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="seatB3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seatA2Button"
+            app:srcCompat="@drawable/seatnotavailable" />
+
+        <ImageButton
+            android:id="@+id/seatB2Button"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:onClick="seatB2"
+            app:layout_constraintStart_toEndOf="@+id/seatB1Button"
+            app:layout_constraintTop_toBottomOf="@+id/seatA1Button"
+            app:srcCompat="@drawable/seatavailable" />
+
+        <ImageButton
+            android:id="@+id/seatB1Button"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:onClick="seatB1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seatA1Button"
+            app:srcCompat="@drawable/seatavailable" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="335dp"
+        android:layout_height="64dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/footer_bar_rounded"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:onClick="lunchMainActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_name"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="54dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:onClick="lunchLoginnActivity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_login_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="69dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="lunchAccounttActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_perm_identity_24"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string-array name="cinemaList">
+        <item>Please select</item>
+        <item>Cin-Glasgow</item>
+        <item>Cin-UK</item>
+        <item>Cin-Edin</item>
+    </string-array>
+
+    <string-array name="filmsSpinnerList">
+        <item>Please select</item>
+        <item>Action</item>
+        <item>Drama</item>
+        <item>Thriller</item>
+    </string-array>
+    <string-array name="dateSpinnerList">
+        <item>Please select</item>
+        <item>2021-4-1</item>
+        <item>2021-5-2</item>
+        <item>2021-6-3</item>
+        <item>2021-7-4</item>
+    </string-array>
+    <string-array name="tickets">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="Year">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+    </string-array>
+    <string-array name="Month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="forgot_password"><a href="http;//www.Google.com">Forgot your Password?</a></string>
+    <string name="registration"><a href="http;//www.Google.com">Register new Account</a></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="directions">Get Directions</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
